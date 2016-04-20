@@ -1,0 +1,25 @@
+-- ICONS VEHICLES --
+
+mdpi		1 		84
+hdpi		1.5		126
+xhdpi		2		168
+xxhdpi		3		252
+xxxhdpi 	4		336
+
+
+-- TITLE --
+
+mdpi		1 		60
+hdpi		1.5		80
+xhdpi		2		120
+xxhdpi		3		160
+xxxhdpi 	4		240
+
+
+-- ECONS --
+
+mdpi		1 		22
+hdpi		1.5		33
+xhdpi		2		44
+xxhdpi		3		66
+xxxhdpi 	4		88
