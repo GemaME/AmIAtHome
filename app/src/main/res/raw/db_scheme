@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS log;
+
+CREATE TABLE log(
+
+    _id INTEGER PRIMARY KEY AUTOINCREMENT,
+    type INTEGER,
+    title TEXT,
+    date DATETIME
+);

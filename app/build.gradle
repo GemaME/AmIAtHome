@@ -29,4 +29,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:23.0.+'
 
     compile 'com.google.android.gms:play-services-location:8.4.0'
+
+    compile 'com.ubidots:ubidots-java:1.6.4'
 }

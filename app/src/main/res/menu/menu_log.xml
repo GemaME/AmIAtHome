@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="100"
+        android:title="@string/menu_delete"
+        android:icon="@drawable/thrash"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_reload"
+        android:orderInCategory="100"
+        android:title="@string/menu_reload"
+        android:icon="@drawable/reload"
+        app:showAsAction="always" />
+
+</menu>

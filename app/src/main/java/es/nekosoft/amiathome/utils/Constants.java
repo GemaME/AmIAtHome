@@ -1,11 +1,24 @@
-package es.nekosoft.ejercicio02.utils;
+package es.nekosoft.amiathome.utils;
 
 import com.google.android.gms.location.DetectedActivity;
 
-import es.nekosoft.ejercicio02.R;
+import es.nekosoft.amiathome.R;
 
 
 public class Constants {
+
+    //---- Upload data ----//
+
+    public final static int UP_DEF_TIME = 30;
+    public final static int UP_MAX_TIME = 60;
+    public final static int UP_MIN_TIME = 10;
+
+
+    //---- Ubidots ----//
+
+    public final static String UBI_KEY = "3d847f2f51bc001ff3daefa178433bff2d2b3ee8";
+    public final static String UBI_DEST = "5717bd587625424beb0c0123";
+    public final static String UBI_LOC = "5717bd867625424c3013cce1";
 
 
     //---- Receiver ----//
@@ -19,16 +32,20 @@ public class Constants {
     public final static String REC_ACTIVITY = "activity";
     public final static String REC_PERCENT = "percentage";
 
+
     //---- Location ----//
 
     public final static String LOC_ACTION = "es.nekosoft.LOCATION";
     public static int LOC_INTERVAL = 10000;
     public static int LOC_FAST_INTERVAL = 1000;
 
+
     //---- Activity ----//
 
     public final static String ACT_ACTION = "es.nekosoft.ACTION";
-    public static int ACT_DETECT_INTERV_MS = 20000;
+    public final static int ACT_DEF_TIME = 10;
+    public final static int ACT_MAX_TIME = 60;
+    public final static int ACT_MIN_TIME = 10;
 
     public static int getActivityString(int detectedActivityType) {
 
@@ -62,7 +79,7 @@ public class Constants {
             case DetectedActivity.ON_BICYCLE:
                 return R.drawable.bycicle;
             case DetectedActivity.ON_FOOT:
-                return R.drawable.alien;
+                return R.drawable.people;
             case DetectedActivity.RUNNING:
                 return R.drawable.running;
             case DetectedActivity.STILL:
@@ -100,4 +117,15 @@ public class Constants {
 
     public final static float HIPERBER_LAT = 38.39308241662081f;
     public final static float HIPERBER_LONG = -0.5182886123657227f;
+
+
+    //---- Logs ----//
+
+    public final static String LOG_MAX_ENTRIES = "100";
+
+
+    //---- BrowserActivity ----//
+
+    public final static String BROW_URL = "url";
+
 }

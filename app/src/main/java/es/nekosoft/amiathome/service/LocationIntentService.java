@@ -1,16 +1,17 @@
-package es.nekosoft.ejercicio02.service;
+package es.nekosoft.amiathome.service;
 
 import android.app.IntentService;
 import android.content.Intent;
 import android.location.Location;
 import android.support.v4.content.LocalBroadcastManager;
-import android.widget.Toast;
 
 import com.google.android.gms.location.LocationResult;
 
 import java.util.Date;
 
-import es.nekosoft.ejercicio02.utils.Constants;
+import es.nekosoft.amiathome.dao.LogMHDAO;
+import es.nekosoft.amiathome.model.LogMH;
+import es.nekosoft.amiathome.utils.Constants;
 
 
 public class LocationIntentService extends IntentService {
@@ -38,7 +39,16 @@ public class LocationIntentService extends IntentService {
             return;
 
         Location loc = result.getLastLocation();
+        createLog(loc);
         sendInfo(loc);
+    }
+
+    private void createLog(Location loc){
+
+        String msj = "lat: " +loc.getLatitude() + " - lgn: " +loc.getLongitude();
+        LogMH obj = new LogMH(LogMH.TYPE_LOCATION, msj, new Date());
+        LogMHDAO dao = new LogMHDAO(getBaseContext());
+        dao.insert(obj);
     }
 
     private void sendInfo(Location loc){
@@ -49,6 +59,8 @@ public class LocationIntentService extends IntentService {
         intent.putExtra(Constants.REC_LONG, (float) loc.getLongitude());
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
     }
+
+
 
 }
 

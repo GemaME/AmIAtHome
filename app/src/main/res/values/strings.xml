@@ -1,25 +1,22 @@
 <resources>
     <string name="app_name"></string>
+    <string name="title_activity_browser">Ubidots</string>
     <string name="action_settings">Settings</string>
+
+    <string name="msg_upload_ubi">Ubidots time - %s seconds</string>
+    <string name="msg_upload_act">Activity time - %s seconds</string>
+    <string name="msg_default">---</string>
+    <string name="err_google_api_connect">Oh man! We cannot conect to Google APIs</string>
 
     <string name="btn_browser">browser</string>
     <string name="btn_home">home</string>
 
-    <string name="err_google_api_connect">Oh man! We cannot conect to Google APIs</string>
-
     <string name="distance_left_metres">m. left</string>
     <string name="distance_left">km. left</string>
     <string name="distance_left_finish">Im here!</string>
-    <string name="activity_bycicle">bycicle</string>
-    <string name="activity_walking">walking</string>
-    <string name="activity_running">runing</string>
-    <string name="activity_still">still</string>
-    <string name="activity_vehicle">vehicle</string>
-    <string name="activity_uknown">uknown</string>
-    <string name="title_activity_browser">BrowserActivity</string>
 
     <string name="dialog_places_title">Select place</string>
-    <string name="dialog_places_cancell">Cancell</string>
+    <string name="dialog_places_cancel">Cancel</string>
     <string-array name="list_places">
         <item>Piso</item>
         <item>Casa</item>
@@ -28,6 +25,12 @@
         <item>Aularion 2</item>
         <item>Biblioteca</item>
     </string-array>
+    <string name="place_piso">Piso</string>
+    <string name="place_casa">Casa</string>
+    <string name="place_hiperber">Hiperber</string>
+    <string name="place_poli_01">Politéctica I</string>
+    <string name="place_aulario_02">Aularion 2</string>
+    <string name="place_biblio">Biblioteca</string>
 
     <string name="act_vehicle">Vehicle</string>
     <string name="act_bicycle">Bicycle</string>
@@ -38,5 +41,15 @@
     <string name="act_tilting">Tilting</string>
     <string name="act_unkown">Uknown</string>
     <string name="act_undefined">Undefined</string>
+
+    <string name="title_activity_log">LogActivity</string>
+    <string name="toast_reload_empty">There are no logs</string>
+    <string name="toast_reload_data">There are new entries</string>
+    <string name="dialog_delete_title">Delete entries</string>
+    <string name="dialog_delete_msg">If you delete all entries you cannot show again</string>
+    <string name="toast_delete">The entries are deleted</string>
+
+    <string name="menu_delete">Delete</string>
+    <string name="menu_reload">Reload</string>
 
 </resources>

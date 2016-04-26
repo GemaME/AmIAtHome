@@ -12,7 +12,7 @@
     tools:showIn="@layout/activity_main">
 
     <ImageView
-        android:id="@+id/title_app"
+        android:id="@+id/iv_title_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -21,17 +21,17 @@
         android:src="@drawable/title"/>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/ll_principal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/title_app"
+        android:layout_below="@+id/iv_title_app"
         >
 
         <android.support.v7.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_distance"
+            android:id="@+id/cv_distance"
             android:layout_width="0dp"
             android:layout_height="180dp"
             android:layout_marginRight="8dp"
@@ -47,8 +47,8 @@
                 >
 
                 <TextView
-                    android:id="@+id/distance_quantity"
-                    android:text="175"
+                    android:id="@+id/tv_distance_quantity"
+                    android:text="@string/msg_default"
                     android:textColor="#FFF"
                     android:textSize="45sp"
                     android:layout_width="wrap_content"
@@ -56,14 +56,24 @@
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
-                    android:id="@+id/distance_label"
+                    android:id="@+id/tv_distance_remain"
                     android:text="@string/distance_left"
                     android:textColor="#FFF"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/distance_quantity" />
+                    android:layout_below="@+id/tv_distance_quantity" />
+
+                <TextView
+                    android:id="@+id/tv_distance_place"
+                    android:text="@string/msg_default"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_distance_remain" />
 
             </RelativeLayout>
 
@@ -87,21 +97,21 @@
                 android:gravity="center_vertical">
 
                 <ImageView
-                    android:id="@+id/vehicle_pic"
-                    android:src="@drawable/people"
+                    android:id="@+id/iv_activity"
+                    android:src="@drawable/alien"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
-                    android:id="@+id/vehicle_type"
-                    android:text="@string/activity_walking"
+                    android:id="@+id/tv_activity_type"
+                    android:text="@string/act_unkown"
                     android:textColor="#FFF"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/vehicle_pic"
+                    android:layout_below="@+id/iv_activity"
                     android:layout_centerHorizontal="true"/>
 
             </RelativeLayout>
@@ -112,47 +122,84 @@
 
 
     <SeekBar
-        android:id="@+id/upload_seekbar"
+        android:id="@+id/sb_upload_ubi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/linearLayout" />
+        android:layout_below="@+id/ll_principal" />
 
     <TextView
-        android:id="@+id/upload_time"
+        android:id="@+id/tv_upload_ubi"
+        android:text="@string/msg_default"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/sb_upload_ubi"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_blue"/>
+
+
+    <SeekBar
+        android:id="@+id/sb_upload_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_upload_ubi" />
+
+    <TextView
+        android:id="@+id/tv_upload_act"
         android:text="Each 10 seconds"
         android:textColor="#FFF"
         android:textSize="16sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
-        android:layout_below="@+id/upload_seekbar"
+        android:layout_below="@+id/sb_upload_act"
         android:gravity="center_horizontal"
         android:background="@drawable/back_blue"/>
+
+
+    <ImageButton
+        android:id="@+id/btn_map"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_upload_act"
+        android:layout_toLeftOf="@+id/btn_browser"
+        android:background="@drawable/world"/>
 
     <ImageButton
         android:id="@+id/btn_browser"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_below="@+id/upload_time"
-        android:layout_toLeftOf="@+id/nothig_view"
+        android:layout_below="@+id/tv_upload_act"
+        android:layout_toLeftOf="@+id/v_empty"
         android:background="@drawable/browser"/>
 
     <View
-        android:id="@+id/nothig_view"
-        android:layout_width="10dp"
+        android:id="@+id/v_empty"
+        android:layout_width="1dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/upload_time"/>
+        android:layout_centerHorizontal="true"></View>
 
     <ImageButton
         android:id="@+id/btn_home"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_below="@+id/upload_time"
-        android:layout_toRightOf="@+id/nothig_view"
+        android:layout_below="@+id/tv_upload_act"
+        android:layout_toRightOf="@+id/v_empty"
         android:background="@drawable/home"/>
+
+    <ImageButton
+        android:id="@+id/btn_log"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_upload_act"
+        android:layout_toRightOf="@+id/btn_home"
+        android:background="@drawable/clipboard"/>
 
 
 </RelativeLayout>

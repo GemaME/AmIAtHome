@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS place;
+DROP TABLE IF EXISTS room;
+DROP TABLE IF EXISTS furniture;
+DROP TABLE IF EXISTS furniture_type;
+DROP TABLE IF EXISTS container;
+DROP TABLE IF EXISTS article;
+
+DROP TABLE IF EXISTS field_attr;
+DROP TABLE IF EXISTS field_relation;
+
+DROP TABLE IF EXISTS picture;

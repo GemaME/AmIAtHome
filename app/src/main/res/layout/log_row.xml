@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:src="@drawable/location_color"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Titulo"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="72dp"
+        android:layout_marginRight="16dp"
+        android:layout_above="@+id/empty"/>
+
+    <View
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:text="Subtitulo"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="72dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/empty"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45000000"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/icon"
+         />
+
+</RelativeLayout>

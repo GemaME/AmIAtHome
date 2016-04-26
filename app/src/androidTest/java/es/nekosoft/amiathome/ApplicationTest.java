@@ -1,4 +1,4 @@
-package es.nekosoft.ejercicio02;
+package es.nekosoft.amiathome;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

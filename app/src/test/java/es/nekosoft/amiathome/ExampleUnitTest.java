@@ -1,4 +1,4 @@
-package es.nekosoft.ejercicio02;
+package es.nekosoft.amiathome;
 
 import org.junit.Test;
 
