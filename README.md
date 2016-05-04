@@ -1,4 +1,7 @@
 # Am I at home?
+
+![](/doc/pic.png =100x20)
+
 Applicación para Android de ejemplo para mostrar como se usan y funcionas diversos servicios de Google para Android (localización, detección de actividades y comprobar si el usuario esta dentro de una zona geográfica concreta). En concreto sirve para informar a que distancia esta el usuario a una serie de destino preefinidos. Aunque sea un enfoque muy rígido lo que se prima es el entendimiento de uso de las APIs.
 
 # Requisitos alcanzados (asignatura de Optimización del Master)
