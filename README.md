@@ -45,5 +45,5 @@ Por último en la parte inferior hay unserie de botones que de izquierda a derec
 
 # Eficiencia
 
-A diferencia de la aplicación My habits, en esta nos hemos centrado en el cálculo de la distancia y experimentar con interfaces que no tengan que ver con la guía material design.
+A diferencia de la aplicación [My Habits](https://github.com/GemaME/MyHabits), en esta nos hemos centrado en el cálculo de la distancia y experimentar con interfaces que no tengan que ver con la guía material design.
 
